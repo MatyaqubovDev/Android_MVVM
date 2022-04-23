@@ -7,4 +7,7 @@ import dev.matyaqubov.android_mvvm.model.Post
 class CreatePostViewModel : ViewModel() {
     val createdPost = MutableLiveData<Post>()
 
+    fun apiCreatePost(){
+
+    }
 }
