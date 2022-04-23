@@ -2,7 +2,9 @@ package dev.matyaqubov.android_mvvm.utils
 
 import android.content.Context
 import android.content.DialogInterface
+
 import androidx.appcompat.app.AlertDialog
+
 
 object Utils {
 
@@ -25,6 +27,8 @@ object Utils {
             alertDialog.show()
         }
     }
+
+
 
     interface DialogListener {
         fun onPositiveClick()

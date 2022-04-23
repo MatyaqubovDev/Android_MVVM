@@ -9,21 +9,21 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class CreatePostViewModel : ViewModel() {
-    val createdPost = MutableLiveData<Post>()
+class UpdatePostViewModel : ViewModel() {
+    val updatedPost = MutableLiveData<Post>()
 
-    fun apiCreatePost(post: Post): LiveData<Post> {
-
-        RetrofitHttp.postService.createPost(post).enqueue(object : Callback<Post> {
+    fun apiUpdatePost(post: Post): LiveData<Post> {
+        RetrofitHttp.postService.updatePost(post.id, post).enqueue(object : Callback<Post> {
             override fun onResponse(call: Call<Post>, response: Response<Post>) {
-                createdPost.value = response.body()
+                updatedPost.value = response.body()
             }
 
             override fun onFailure(call: Call<Post>, t: Throwable) {
-                createdPost.value = null
+                updatedPost.value = null
             }
 
         })
-        return createdPost
+
+        return updatedPost
     }
 }

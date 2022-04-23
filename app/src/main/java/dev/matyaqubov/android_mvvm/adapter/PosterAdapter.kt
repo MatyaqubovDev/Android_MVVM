@@ -34,7 +34,7 @@ class PosterAdapter(var activity: MainActivity, var list: ArrayList<Post>) :
                     false
                 }
                 b_update.setOnClickListener {
-//                    activity.callUpdateActivity(post)
+                    activity.callUpdatePostActivity(post)
                 }
             }
         }

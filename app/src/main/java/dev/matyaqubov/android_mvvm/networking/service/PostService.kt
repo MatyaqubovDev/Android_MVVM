@@ -19,9 +19,9 @@ interface PostService {
 
 
     @POST("posts")
-    fun createPost(@Body poster: Post?): Call<Post?>?
+    fun createPost(@Body poster: Post?): Call<Post>
 
     @PUT("posts/{id}")
-    fun updatePost(@Path("id") id: Int, @Body post: Post?): Call<Post?>?
+    fun updatePost(@Path("id") id: Int, @Body post: Post?): Call<Post>
 
 }

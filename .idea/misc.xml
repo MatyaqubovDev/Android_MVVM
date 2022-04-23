@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/drawable-v24/ic_add.xml" value="0.2203125" />
         <entry key="app/src/main/res/layout/activity_create_post.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/layout/activity_update.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_update_post.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_poster_list.xml" value="0.20416666666666666" />
       </map>
     </option>
