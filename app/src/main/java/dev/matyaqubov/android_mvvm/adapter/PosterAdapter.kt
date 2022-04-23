@@ -12,7 +12,6 @@ import dev.matyaqubov.android_mvvm.activity.MainActivity
 import dev.matyaqubov.android_mvvm.model.Post
 import dev.matyaqubov.android_mvvm.utils.Utils
 
-import java.lang.ref.WeakReference
 
 class PosterAdapter(var activity: MainActivity, var list: ArrayList<Post>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
